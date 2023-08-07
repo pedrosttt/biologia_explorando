@@ -1,0 +1,239 @@
+/* Definições globais */
+/* ------------------ */
+
+/* Zera as margens, espaçamentos e ajusta o box-model para border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configura a fonte padrão para o corpo do documento e inputs/textarea */
+body,
+input,
+textarea {
+    font-family: 'Merriweather', sans-serif;
+}
+
+/* Configura a fonte 'Bungee' para os cabeçalhos do header e seções */
+header h1,
+section h2,
+section h3,
+header ul li,
+form button {
+    font-family: 'Bungee', cursive;
+}
+
+/* Estilos específicos para os parágrafos dentro da seção */
+section p {
+    margin-top: 4px;
+}
+
+/* Alinha os elementos da classe 'container' em flex-start (início) */
+section .container {
+    align-items: flex-start;
+}
+
+/* Estilo específico para o cabeçalho das seções */
+section h2 {
+    margin-bottom: 16px;
+}
+
+/* Define um espaçamento padrão na parte inferior de todas as seções */
+section {
+    margin-bottom: 8px;
+}
+
+/* Estilo específico para imagens com a classe 'img-about' na seção de sobre */
+.img-about {
+    margin-right: 32px;
+}
+
+/* Configura a fonte normal para os cabeçalhos do header, seções e botões de formulário */
+header h1,
+section h2,
+section h3,
+form button {
+    font-weight: normal;
+}
+
+/* Estilos específicos para o elemento com ID 'site-title' */
+#site-title {
+    padding: 16px 0;
+    background-color: rgb(67, 184, 67);
+    color: #fff;
+}
+
+/* Estilos específicos para os itens da lista no menu de navegação do header */
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* Estilos específicos para os links no menu de navegação do header */
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Configura a largura máxima para os elementos com a classe 'container' e centraliza-os horizontalmente */
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos específicos para os elementos com a classe 'container' dentro do header e seções, alinhando-os em um layout flexível */
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos específicos para as seções, adicionando espaçamento interno e vertical */
+section {
+    padding: 40px 0;
+}
+
+/* Estilos para os links dentro dos artigos (elementos 'a' dentro da classe 'articles') */
+.articles article a {
+    background-color: rgb(67, 184, 67); /* Cor de fundo do link dentro dos artigos */
+    color: white; /* Cor do texto dos links dentro dos artigos */
+    padding: 8px; /* Espaçamento interno do link dentro dos artigos */
+    display: inline-block; /* Os links são exibidos como blocos em linha */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Estilos para as imagens nas redes sociais com a classe 'social-links' */
+.social-links img {
+    height: 24px;
+}
+
+/* Estilos para os itens da lista nas redes sociais */
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Estilos para os links nas redes sociais */
+.social-links li a {
+    text-decoration: none;
+}
+
+/* Estilos para os artigos, organizando-os em um layout flexível e espaçamento entre eles */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para as imagens dentro dos artigos, ajustando a altura */
+.articles img {
+    height: 180px;
+}
+
+/* Estilos para os elementos 'article' nos artigos, definindo sua largura e espaçamento inferior */
+.articles article {
+    width: 30%;
+    margin-bottom: 16px;
+}
+
+/* Estilos para os cabeçalhos 'h2' nos artigos, definindo o tamanho da fonte e espaçamento inferior */
+.articles h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o elemento com classe 'article-title', alinhando-o ao centro e adicionando estilo de fundo */
+.article-title {
+    text-align: center;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+/* Estilos para os cabeçalhos 'h2' dentro do elemento com classe 'article-title' */
+.article-title h2 {
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    display: inline-block;
+}
+
+/* Estilos para os cabeçalhos 'h3' dentro dos artigos, definindo espaçamento superior e inferior */
+.articles article h3 {
+    margin: 2px;
+}
+
+/* Classe para ajustar o espaçamento do título do artigo */
+.articles article header {
+    padding: 10px 0;
+}
+
+/* Estilos específicos para o elemento com ID 'contact' e a classe 'container', exibindo-o como bloco */
+#contact .container {
+    display: block;
+}
+
+/* Estilos para os métodos de contato, alinhando-os em um layout flexível com espaçamento entre eles */
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para os elementos 'input', 'textarea' e 'button' dentro do formulário, definindo largura, espaçamento e removendo bordas */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    outline: #055015;
+}
+
+/* Estilos para o elemento 'textarea' do formulário, removendo a capacidade de redimensionar e definindo a altura */
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+/* Estilos para o botão do formulário, definindo cores de fundo e texto, removendo bordas e cursor personalizado */
+form button {
+    background-color: rgb(67, 184, 67);
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para o botão do formulário quando passa o cursor sobre ele, alterando a cor de fundo */
+form button:hover {
+    background-color: #0b4b16;
+}
+
+/* Estilos para os elementos 'input' e 'textarea' quando estão com foco, definindo a cor do contorno */
+input:focus,
+textarea:focus {
+    outline-color: rgb(67, 184, 67);
+}
+
+/* Estilos para o rodapé, definindo cor de fundo e cor do texto, além de um espaçamento interno */
+footer {
+    background-color: rgb(67, 184, 67);
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+/* Estilos específicos para os cabeçalhos 'h2' dentro do elemento com ID 'articles' */
+#articles h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os links dentro dos artigos quando o cursor está sobre eles, adicionando sublinhado */
+article a:hover {
+    text-decoration: underline;
+}
